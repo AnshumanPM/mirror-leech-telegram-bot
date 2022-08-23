@@ -774,7 +774,7 @@ def set_priority(id_):
 
 @app.route('/')
 def homepage():
-    return "<h1>See mirror-leech-telegram-bot <a href='https://www.github.com/anasty17/mirror-leech-telegram-bot'>@GitHub</a> By <a href='https://github.com/anasty17'>Anas</a></h1>"
+    return "<h1>Bot is running. Made By <a href='https://t.me/AnshumanPM_2006'>AnshumanPM</a></h1>"
 
 @app.errorhandler(Exception)
 def page_not_found(e):
