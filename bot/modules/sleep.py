@@ -12,8 +12,7 @@ def sleep(update, context):
     elif alive.returncode is None:
         alive.kill()
         msg = 'Your bot will sleep in 30 minute maximum.\n\n'
-        msg += 'In case changed your mind and want to use the bot again before the sleep then restart the bot.\n\n'
-        msg += f'Open this link when you want to wake up the bot {BASE_URL}.'
+        msg += 'In case changed your mind and want to use the bot again before the sleep then restart the bot.'
         sendMessage(msg, context.bot, update.message)
     else:
         sendMessage('Ping have been stopped, your bot will sleep in less than 30 min.', context.bot, update.message)
